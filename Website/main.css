@@ -135,7 +135,7 @@ header{
     text-decoration: underline;
 }
 .edcContainer{
-    width: 500px;
+    width: 800px;
     border: 1px solid black;
     padding: 15px;
     background-color: white;
@@ -204,7 +204,6 @@ header{
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .box-3 p {
     padding: 10px;
 }
@@ -217,4 +216,74 @@ footer p{
     font-family: 'Caveat' , sans-serif;
     font-size: 2rem;
 }
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .leftContainer {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .rightContainer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .boxContainer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .projectContainer,
+    .expContainer,
+    .edcContainer {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .boxContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .expContainer,
+    .edcContainer {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bottomBoxesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-1,
+    .box-2,
+    .box-3 {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 
